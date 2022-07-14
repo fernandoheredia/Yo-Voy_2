@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YO VOY</title>
+   
+
+    <!-- link para iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link de boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+
+     <!-- link fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="centrar ">
+    <div class="contenedor">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+            <div class="container-fluid">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
+                    <a class="navbar-brand" href="Index.html">
+                        <img src="img/Logo-Oficial3.png" class="d-inline-block align-text-center imgRedonda text-white " id="Logo" width="60" height="60"  alt="Logo"><strong> &nbsp YO VOY </strong>
+                    </a>
+                </div>
+                <button class="navbar-toggler text-white col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                </button>
+                <div id="navbarResponsive" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav   ms-auto me-4 my-3 my-lg-0 ">
+                        <ul class="navbar-nav  ms-auto me-4 my-3 my-lg-0 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <li class="nav-item ">
+                                <strong  class="nav-link " style="color: white; " >Registro</strong>
+                            </li>
+                            <li >
+                                <a class="estiloboton btn btn-secondary  px-4 rounded-pill small"  href="index.html" >Inicio</a>
+                            </li>
+                        </ul>     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <header class="centrar">
+            <form id="signup-form">
+                <div class="DetalleNav">
+        
+                </div>
+                <h2 class="card-title  mb-3 bg-body rounded">
+                    <section>
+                        <div class="card border border-4">
+                            <form id="Form-Reg">
+                            <form id="signup-form">
+                                <h1 class="card-title d-flex justify-content-center text-white">¡Registrate!</h1>
+                                <h2 class="card-title d-flex justify-content-center text-white">Ingresa tus datos personales</h2>
+                            
+                                <!----------------------------Aca empieza otro formato de formulario---------------------------------------->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Correo</span>
+                                    <input id="signup-email" type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Contraseña</span>
+                                    <input id="signup-password" type="password" aria-label="Correo" class="form-control" required placeholder="Contraseña" style="height: auto;">
+                                </div> 
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Nombres</span>
+                                    <input id= "signup-firstName" type="text" aria-label="First name" class="form-control" style="height: auto;" placeholder="Primero">
+                                    <input id="signup-secondtName" type="text" aria-label="Last name" class="form-control" style="height: auto;" placeholder="Segundo">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Apellidos</span>
+                                    <input id="signup-lastName" type="text" aria-label="First name" class="form-control" style="height: auto;">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Fecha de nacimiento</span>
+                                    <input id="signup-date" type="date" name="salida" aria-label="First name" class="form-control" style="height: auto;">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Sexo</span>
+                                    <select name="Sexo" id="signup-sexo" style="height:auto;" class="form-select form-select-sm">
+                                        <option value="Sexo"></option>
+                                        <option id="signup-sexo">Masculino</option>
+                                        <option id="signup-sexo">Femenino</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Nacionalidad</span>
+                                    <select name="Nacionalidad" id="signup-nacionalidad" style="height:auto;" class="form-select form-select-sm">
+                                        <option value="Nacionalidad"></option>
+                                        <option id="signup-nacionalidad">Argentina</option>
+                                        <option id="signup-nacionalidad">Brasil</option>
+                                        <option id="signup-nacionalidad">Uruguay</option>
+                                        <option id="signup-nacionalidad">Paraguay</option>
+                                        <option id="signup-nacionalidad">Venezuela</option>
+                                        <option id="signup-nacionalidad">Bolivia</option>
+                                        <option id="signup-nacionalidad">chile</option>
+                                        <option id="signup-nacionalidad">Colombia</option>
+                                        <option id="signup-nacionalidad">Panama</option>
+                                        <option id="signup-nacionalidad">Usa</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Documento</span>
+                                    <input id= "signup-documento" type="text" aria-label="Documento" required placeholder="Numero de documento" class="form-control" style="height: auto;">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Cod.</span>
+                                    <input id="signup-codigoArea" type="text" aria-label="Codigo" class="form-control" required placeholder="Codigo de Area" style="height: auto;">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Tel.</span>
+                                    <input id="signup-tel" type="text" aria-label="Tel" class="form-control" required placeholder="Numero de Telefono" style="height: auto;">
+                                </div> 
+                                
+                                <div class="d-grid mb-3 gap-2 d-md-flex justify-content-md-end mx-auto">
+                                    <button id="Aceptar" class="btn btn-secondary rounded-pill me-md-2" type="submit">Aceptar</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </h2>
+            </form>
+            
+        </header>
+        <div class="footer">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; 2021 Derechos reservados YoVoy.</div>
+                    <a style="color: rgb(184, 37, 11);" href="#!">Privacidad</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 23, 11);" href="#!">Terminos</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 31, 11);" href="#!">FAQ</a>
+                    <div class="mb-2"> ---- </div>
+                    <a href="#"><img src="img/008-facebook.png" alt="" width="23" alt="Facebook"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/011-instagram.png" alt="" width="23" alt="Instagram"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/001-twitter.png" alt="" width="23" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script>
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+  apiKey: "AIzaSyDTWC0pJXsuY343kmb-HgzkRDNJWTHV8bQ",
+  authDomain: "proyecto-ya-voy.firebaseapp.com",
+  projectId: "proyecto-ya-voy",
+  storageBucket: "proyecto-ya-voy.appspot.com",
+  messagingSenderId: "453495619473",
+  appId: "1:453495619473:web:8e3140c1ec9dcd2b7ce430",
+  measurementId: "G-KWMQ6DSLHW"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  //firebase.analytics();
+  const fs = firebase.firestore();
+  const auth = firebase.auth()
+</script>
+
+<script src="db/register.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

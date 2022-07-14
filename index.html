@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title >YO VOY  </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Grupo de estudio Tecnicatura en programacion 2do Año ITSC">
+    <meta name="description" content="Pagina web dedicada a facilitar los viajes de turistas y viajantes. Te permite encontrar en un mismo lugar hospedaje, compartir un vehiculo para viajar o simplemente obtener informacion turistica de un lugar. Una Web que te hará dar la vuelta al mundo">
+    <meta name="keywords" content="viajes, turismo, aventura, hospedaje, viajecompartido, carpooling, turismo, córdoba, argentina">
+    <link rel="icon" href="img/logo_bisel.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <!-- link fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- link para iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link de boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+
+<body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm ">
+            <div class="container px-2 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                    <a class="navbar-brand " href="Index.html">
+                        <img src="img/Logo-Oficial3.png" class=" imgRedonda text-white " id="Logo" width="60" height="60"  alt="Logo">
+                    </a>
+                    <strong class="text-white"> &nbsp YO VOY </strong>
+                </div>
+
+                <button class="navbar-toggler text-white col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu       
+                </button>
+                    
+                <div id="navbarResponsive" class="collapse navbar-collapse col-lg-4 col-md-4 col-sm-4 col-xs-12 " >
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <ul class="navbar-nav   col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <!-- boton iniciar sesion-->         
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header >
+            <div class="DetalleNav"></div> 
+            <div>
+                <div class="separator-bottom">
+                    <a href="resultado.html"> <div class="boton btn-flotante-inicio" >
+                        Hospedaje
+                    </div></a>
+                    <a href="Carpooling-inicio copy.html"> <div class="boton btn-flotante-inicio1">
+                        Carpooling 
+                    </div></a>
+                </div>
+              <div class="slide">     
+                <div class="slider-boostrap">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Hotel-5.jpg" class="d-block w-100 vh-100" alt="Imagen de viajes">
+                            </div> 
+                            <div class="carousel-item">
+                                <img src="img/Mujer-Mapa-R.jpg" class="d-block w-100 vh-100" alt="imagen de hospedaje">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Mujer-Mapa.jpg" class="d-block w-100 vh-100" alt="imagen de turismo">
+                            </div>
+                        </div>
+                        <div class="buscador"> 
+                            <form id="ori">
+                                <div >
+                                    <div>
+                                        <h4 class='bx bxs-car'><b>Origen</b></h4>
+                                    </div>
+                                    <div >
+                                        <select class="" style="width: 170px;" placeholder="Provincia" name="Provincia" id="selectProvOrigen">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <h4 class='bx bxs-car-garage'><b>Destino</b></h4>
+                                    </div>
+                                    <select class=""   style="width: 170px;" placeholder="Provincia" name="Provincia" id="selectMuniOrigen">
+                                        <option value=""></option>
+                                    </select>
+            
+                                    <div>
+                                        <h4 class='bx bx-calendar'><b>Desde</b></h4>
+                                    </div>
+                                    <input type="date" name="salida" id="">
+                                    
+                                    <div>
+                                        <h4 class='bx bx-calendar'><b>Hasta</b></h4>
+                                    </div>
+                                    <input type="date" name="salida" id="">
+            
+                                    <div >
+                                    <div>
+                                        
+                                        <h4 class='bx bxs-group' ><b>Adultos</b></h4>
+                                    </div>
+                                    <div>
+                                        <input  type="number" name="" id="" min="1">
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class='bx bxs-baby-carriage'><b>Menores</b></h4>
+                                    </div>
+                                    <div>
+                                        <input type="number" name="" id="" min="0">
+                                    </div>
+                                </br>
+            
+                                    <a href="resultado.html" id="buscar"><div class="estiloboton1 btn btn-outline-danger rounded-pill centrar boton">
+                                        Buscar
+                                    </div></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            </div> 
+            <!-- ----------------seccion bancos y descuentos------------------>
+            <div class="Descuentos">
+                <div>
+                    <h5 class="card-title" style="text-align: center;"><b>¡Cuotas con <br> muchos bancos!</b></h5>
+                </div>
+                <div>
+                    <img src="img/Pago.png" class="rounded"  alt="...">
+                </div>
+                <div>
+                    <img src="img/Pago.png" class="rounded" alt="...">
+                </div>
+                <div>
+                    <button style="background-color: rgb(201, 27, 0); border-radius: 10px;" type="button" class="btn btn-dark regular-button">Ver condiciones</button>
+                </div>
+            </div>
+        </header>
+        <section>
+
+            <!------------------seccion card tipo 2------------------> 
+            <h2 class="cards-titulos  grid-text">Tambien Te Podria Interesar</h2>
+            <div class="card grid">
+                
+                <div class="card-2 ">
+                    <div class="card-img">
+                        <img src="img/carpooling.jpg" alt="auto y destino">
+                        
+                        <div class="card-titulo ">
+                            <h2>Carpooling?</h2>
+                        </div>
+                        <div class="card-detalle2 ">
+                            <p>Aprovecha el Carpooling, asi como podes viajar con alguien que ofrece su vehiculo para ir al mismo destino, tambien podes ofrecer tu vehiculo.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-2 ">
+                    <div class="card-img">
+                        <img src="img/verano-viaje.jpg" alt="imagen de mapa y auto">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Verano 2022</h2>
+                        </div>
+                        <div class="card-detalle2">
+                            <p>Lorem ipsum dolor sit, amet consec adipisicing elit. Sit, molestias? Lorem ipsum dolor sit, amet consec adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2 ">
+                    <div class="card-img">
+                        <img src="img/viajar-barato.jpg" alt="imagen de mapa y alcancia ">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Viajar barato!</h2>
+                        </div>
+                        <div class="card-detalle2">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipSit, molestias? Lorem ipsum dolor sit, amet consec adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------seccion cards------------------>
+            <h1  class="cards-titulos grid-text"> destinos más visitados</h1>
+            <div class="cards grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/card-1.jpg" alt="">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Córdoba</h2>
+                        </div>
+                        <div class="card-detalle2">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card-importe">
+                        <h3 class="px-1" style="background-color: rgb(58, 58, 58); border-radius: 50px;">$3000</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/card-2.jpg" alt="">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Mar del plata</h2>
+                        </div>
+                        <div class="card-detalle2">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card-importe">
+                        <h3 class="px-1" style="background-color: rgb(58, 58, 58); border-radius: 50px;">$3000</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/card-3.jpg" alt="">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Salta</h2>
+                        </div>
+                        <div class="card-detalle2">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card-importe">
+                        <h3 class="px-1" style="background-color: rgb(58, 58, 58); border-radius: 50px;">$3000</h3>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
+        <script>
+            const selectProvOrigen = document.getElementById('selectProvOrigen');
+            const resultado = document.getElementById('resultado');
+            const selectMuniOrigen = document.getElementById('selectMuniOrigen');
+            let UrlProvincias = 'https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre';
+    
+            let idMunicipalidadOrigen;
+            let idMunicipalidadDestino;
+            let NombreMuniOrigen;
+            let NombreMuniDestino;
+            let opcionesMuni = [];
+            let opcionesMuniIdDestino = [];
+            let opcionesMuniIdOrigen = [];
+            let opcionesProv = [];
+    
+            fetch(UrlProvincias)
+                .then(respuesta => respuesta.json())
+                .then(respuesta => CargarSelect(respuesta.provincias))
+                .catch(err => console.log(err))
+                // opcionesProv = [];
+            const CargarSelect = (respuesta) => {
+                for (let i = 0; i < respuesta.length; i++) {
+                    var provincia = respuesta[i];
+                    opcionesProv.push(provincia.nombre)
+                }
+                opcionesProv.sort();
+                console.log(opcionesProv);
+                for (value in opcionesProv) {
+                    var option = document.createElement("option");
+                    option.text = opcionesProv[value];
+                    console.log(option);
+                    selectProvOrigen.add(option);
+                    //selectProvDestino.add(option);
+    
+                }
+                for (value in opcionesProv) {
+                    var option = document.createElement("option");
+                    option.text = opcionesProv[value];
+                    console.log(option);
+                    selectProvDestino.add(option);
+    
+                }
+    
+    
+            }
+            selectProvOrigen.addEventListener('change',
+    
+                function() {
+                    let provinciaelegida = this.options[selectProvOrigen.selectedIndex].text;
+                    let UrlLocalidades = 'https://apis.datos.gob.ar/georef/api/localidades?provincia=' + provinciaelegida + '&campos=nombre,id&max=1000' //'https://apis.datos.gob.ar/georef/api/municipios?provincia=' + provinciaelegida + '&campos=id,nombre&max=200'
+                    fetch(UrlLocalidades)
+                        .then(respuesta => respuesta.json())
+                        .then(respuesta => CargarSelectMuni(respuesta.localidades))
+                        .catch(err => console.log(err))
+    
+                    const CargarSelectMuni = (respuesta) => {
+                        console.log(respuesta);
+                        for (let i = selectMuniOrigen.options.length; i >= 0; i--) {
+                            selectMuniOrigen.remove(i);
+                        }
+                        opcionesMuni.length = 0;
+                        opcionesMuniIdOrigen.length = 0;
+                        for (let i = 0; i < respuesta.length; i++) {
+                            var municipio = respuesta[i];
+                            opcionesMuni.push([municipio.nombre]);
+                            opcionesMuniIdOrigen.push([municipio.id]);
+                        }
+    
+                        let i = 0;
+                        for (value in opcionesMuni) {
+                            var option = document.createElement("option");
+                            option.text = opcionesMuni[value];
+                            selectMuniOrigen.add(option);
+    
+                        }
+                    }
+                });
+            selectMuniOrigen.addEventListener('change',
+                function() {
+                    let Localidadelegida = document.getElementById("selectMuniOrigen").selectedIndex;
+                    NombreMuniOrigen = selectMuniOrigen.options[selectMuniOrigen.selectedIndex].text;
+                    idMunicipalidadOrigen = opcionesMuniIdOrigen[Localidadelegida];
+                    console.log(idMunicipalidadOrigen);
+                    console.log(NombreMuniOrigen);
+                })
+        </script>
+
+        <div class="footer">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; 2021 Derechos reservados YoVoy.</div>
+                    <a style="color: rgb(184, 37, 11);" href="#!">Privacidad</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 23, 11);" href="#!">Terminos</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 31, 11);" href="#!">FAQ</a>
+                    <div class="mb-2"> ---- </div>
+                    <a href="#"><img src="img/008-facebook.png" alt="" width="23" alt="Facebook"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/011-instagram.png" alt="" width="23" alt="Instagram"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/001-twitter.png" alt="" width="23" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Iniciar sesion modal-->
+
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-form p-4">
+                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Iniciar Sesión</h5>
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 p-4">
+                    <form id = "Form-Ingresar">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                            <small id="emailHelp" class="form-text text-muted">Respetaremos tu privacidad.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                        <div class="form-group">
+                            <a  href="inscripcion signup.html">¿No tenes cuenta? Haz click aqui!</a>
+                        </div>
+                    </br>
+                    
+                        <button type="submit" id="modals" class="btn btn-outline-primary">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+   
+    <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+          apiKey: "AIzaSyDTWC0pJXsuY343kmb-HgzkRDNJWTHV8bQ",
+          authDomain: "proyecto-ya-voy.firebaseapp.com",
+          projectId: "proyecto-ya-voy",
+          storageBucket: "proyecto-ya-voy.appspot.com",
+          messagingSenderId: "453495619473",
+          appId: "1:453495619473:web:8e3140c1ec9dcd2b7ce430",
+          measurementId: "G-KWMQ6DSLHW"
+        };
+    </script> 
+    <script src="db/login.js"></script>
+    <script src="db/hospMostrar.js"></script>
+    
+    
+</body>
+
+</html>

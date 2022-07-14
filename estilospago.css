@@ -1,0 +1,28 @@
+:root {
+    --color_claro: white;
+    --gradientp: radial-gradient(ellipse at center, rgba(70, 70, 70, 0.616) 0%,rgba(2, 154, 192, 0.651) 100%);
+
+}
+
+body {
+    
+    font-family: "Open Sans", sans-serif;
+    
+    background: url(img/happy-hipster-company-of-friends-traveling-around-world.jpg);
+    background-size: cover;
+    
+}
+
+.pago{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    color: var(--color_claro);
+    background: var(--gradientp);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
